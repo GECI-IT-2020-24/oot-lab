@@ -1,0 +1,175 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{minted}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\geometry{a4paper,
+top=6mm,
+left=12mm
+}
+\setmainfont{JetBrainsMono NF}[
+    Contextuals=Alternate
+]
+% \definecolor{paperclrbg}{HTML}{BCBCBC}
+\begin{document}
+\setcounter{tocdepth}{1}
+\tableofcontents
+\clearpage
+%Experiment 1 : 
+\section{Object Oriented Programming Basics: Banking Application}
+\vspace*{1mm}
+% \textbf{Qn.1} Define a class to represent a bank account.Include the following members :
+% \begin{minipage}[t]{0.6\textwidth}
+%     \begin{enumerate}[nosep]
+%         \item Name of depositor
+%         \item Account Number
+%         \item Account type
+%         \item Account balance
+%     \end{enumerate}
+% \end{minipage}
+% \vspace*{1mm}
+\textbf{
+    \inputminted[firstline=9,style=emacs]{java}{./programs/exp1.java}
+}
+\clearpage
+%Experiment 2 : 
+\section{Object Oriented Programming Basics: Student Mark Calculation}
+\vspace*{1mm}
+% \textbf{Qn.2} Create a class Student with instance variables :
+% % \vspace*{2mm}
+% \begin{enumerate}[nosep]
+%     \item Name
+%     \item Roll No
+%     \item Mark1,Mark2,Mark3
+% \end{enumerate}
+% \vspace*{4mm}
+% \ and methods to :
+% \vspace*{4mm}
+% \begin{enumerate}[nosep]
+%     \item Calculate Average Mark
+%     \item Display name, Rollno and Average Marks
+% \end{enumerate}
+% \vspace*{1mm}
+\textbf{
+    \inputminted[firstline=12,style=emacs]{java}{./programs/exp2.java}
+}
+\clearpage
+%Experiment 3 :
+\section{Object Oriented Programming Basics: KSEB Billing}
+\vspace*{1mm}
+% \textbf{Qn.3} write a class KsebConsumer with instance variables Consumer No,Consumer Name,No of units consumed
+% and method CalculateCharge() to display the charge with name.
+% Electricity board charges the following rates to
+% domestic users to discourage large consumption of energy.
+% \begin{enumerate}[nosep]
+%     \item for the first \textbf{100} units :  \textbf{60} Paisa/unit
+%     \item for the next  \textbf{200} units :  \textbf{80} Paisa/Unit
+%     \item Beyond \textbf{300} units:  \textbf{90} Paise/Unit
+% \end{enumerate}
+% \vspace*{1mm}
+% \textbf{All users are charged with a minimum of Rs.50.}
+% if the total amount is more
+% than rs 300 then an additional surcharge of Rs.15 is added
+% \vspace*{1mm}
+\textbf{
+    \inputminted[firstline=17,style=emacs]{java}{./programs/exp3.java}
+}
+\clearpage
+%Experiment 4 : 
+\section{Method Overloading:Area Calculation}
+\vspace*{1mm}
+% \textbf{Qn.4} Develop a java program to calculate the area of different shapes namely
+% circle,rectangle \& triangle using the concepts of method overloading.
+% \vspace*{10mm}
+\textbf{
+    \inputminted[firstline=6,style=emacs]{java}{./programs/exp4.java}
+}
+\clearpage
+%Experiment 5 : 
+\section{Inheritance : Exmployee Details}
+\vspace*{1mm}
+% \textbf{Qn.5} Design a class \textbf{Person} and add Subclass \textbf{Employee}.
+% Employee has two subclass \textbf{Faculty} ,\textbf{Staff}
+% Person has : name,address, phone no , email id
+% Student has Status \textit{( Junior , Senior , SuperSenior)}
+% Define the status as a constant and employee has an office ,salary and date
+% Faculty has office hours and Rank  \textit{(AssisstantProf,Associate Prof,Prof)}
+% Staff member has a Title \textit{(Assistant , Officer,Manager)}
+% Write a test program that creates a person, student , employee, faculty and staff \& invoke their toString method.
+% \vspace*{1mm}
+\textbf{
+    \inputminted[firstline=12,style=emacs]{java}{./programs/exp5.java}
+}
+\clearpage
+%Experiment 6 : 
+\section{Inheritance : Student Details}
+\vspace*{1mm}
+% \textbf{Qn.6} Develop a java program to read and print student data using inheritance
+% Class \textbf{Person} \textit{(name,age,gender)}
+% Class \textbf{Student} inherits Person \textit{(mark1,mark2,mark3)}
+% Compute the total mark and grade.
+% \vspace*{1mm}
+\textbf{
+    \inputminted[firstline=8,style=emacs]{java}{./programs/exp6.java}
+}
+\clearpage
+%Experiment 7 : 
+\section{Recursive and Non-Recursive functions : Fibonacci series}
+\vspace*{1mm}
+% \textbf{Qn.7} Develop a java program which uses both recursive and non-recursive function
+% to find the \textbf{$n^{\text{th}}$} value of fibonacci series.
+% \vspace*{1mm}
+\textbf{
+    \inputminted[firstline=6,style=emacs]{java}{./programs/exp7.java}
+}
+\clearpage
+%Experiment 8 : 
+\section{Multithreading : Test Printing}
+\vspace*{1mm}
+% \textbf{Qn.8} Develop a java application that executes two threads.One thread displays \textbf{"Hello"}
+% in every 1000 ms and other displays \textbf{"World"} in every 3000ms.
+% Create threads by extending the thread class.
+% \vspace*{1mm}
+\textbf{
+    \inputminted[firstline=8,style=emacs]{java}{./programs/exp8.java}
+}
+\clearpage
+%Experiment 9 : 
+\section{Multithreading : Number Generation}
+\vspace*{1mm}
+% \textbf{Qn.9} Develop a java program that implements a mulithreaded program that implements 3 threads.
+% \begin{itemize}
+%     \item first thread generates a random number for every 1 second
+%     \item if the value is even second thread computes the square of the number and prints
+%     \item if the value is odd the third thread will print the values of cube of the number .
+% \end{itemize}
+% \vspace*{1mm}
+\textbf{
+    \inputminted[firstline=9,style=emacs]{java}{./programs/exp9.java}
+}
+\clearpage
+%Experiment 10 : 
+\section{Exception Handling : Stack implementation}
+\vspace*{1mm}
+% \textbf{Qn.10} Develop a java program that implements a \textbf{Stack} that raises Exceptions
+% in case of error and with \textit{push,pop \& display} functionalities.
+% \vspace*{1mm}
+\textbf{
+    \inputminted[firstline=7,style=emacs]{java}{./programs/exp10.java}
+}
+\clearpage
+%Experiment 11 : 
+\section{AWT : Traffic Light Control}
+\vspace*{1mm}
+% \textbf{Qn.11} Develop a Java program that stimulates a traffic light using AWT.
+% The program let's the user select one of the 3 lights \textbf{red,yellow,green} with radio button,
+% on selecting a button an appropriate message with stop,ready or go
+% should appear above the button in a selected colour,
+% initially there is no message shown.
+% \vspace*{1mm}
+\textbf{
+    \inputminted[firstline=9,style=emacs]{java}{./programs/exp11.java}
+}
+\end{document}
